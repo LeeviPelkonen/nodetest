@@ -12,9 +12,14 @@ console.log('Here index.js');
 res.send('Hello leevi.');
 });
 
-app.post('/', req, res)=> {
+app.post('/', (req, res)=> {
   console.log(req.body);
   res.send('Hello this is post');
+});
+
+app.get('/test/identifier', (req, res)=> {
+console.log(req.params);
+res.send('Hello identifier');
 });
 
 app.listen(3000);
