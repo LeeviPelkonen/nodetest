@@ -19,7 +19,7 @@ app.post('/' , req, res)=> {
 
 app.get('/test/identifier', (req, res)=> {
 console.log(req.params);
-res.send('Hello identifier') + test;
+res.send('Hello identifier' + test);
 });
 
 app.listen(3000);
