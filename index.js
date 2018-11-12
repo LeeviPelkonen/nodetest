@@ -11,15 +11,4 @@ console.log('Here index.js');
   const test = req.query.test;
 res.send('Hello leevi.');
 });
-
-app.post('/' , req, res)=> {
-  console.log(req.query.test);
-  res.send('Hello this is post');
-});
-
-app.get('/test/identifier', (req, res)=> {
-console.log(req.params);
-res.send('Hello identifier');
-});
-
 app.listen(3000);
