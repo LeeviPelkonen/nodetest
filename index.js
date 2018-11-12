@@ -9,7 +9,7 @@ app.use(express.static('public'));
 app.get('/', (req, res)=> {
 console.log('Here index.js');
   const test = req.query.test;
-res.send('Hello leevi.' + test);
+res.send('Hello leevi.');
 });
 
 app.post('/' , req, res)=> {
