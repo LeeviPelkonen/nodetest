@@ -17,4 +17,9 @@ app.post('/' , req, res)=> {
   res.send('Hello this is post');
 });
 
+app.get('/test/identifier', (req, res)=> {
+console.log(req.params);
+res.send('Hello identifier');
+});
+
 app.listen(3000);
