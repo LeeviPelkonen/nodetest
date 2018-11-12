@@ -7,9 +7,19 @@ const app = express();
 app.use(express.static('public'));
 
 app.get('/', (req, res)=> {
+console.log('Here index.js');
+  const test = req.query.test;
+res.send('Hello leevi.') + test;
+});
 
-console.log('Here we come= This console. log from index.js');
-res.send('Hello leevi.');
+app.post('/' , req, res)=> {
+  console.log(req.query.test);
+  res.send('Hello this is post');
+});
+
+app.get('/test/identifier', (req, res)=> {
+console.log(req.params);
+res.send('Hello identifier') + test;
 });
 
 app.listen(3000);
