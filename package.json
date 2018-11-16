@@ -2,7 +2,7 @@
   "name": "leevi",
   "version": "1.0.0",
   "description": "test",
-  "main": "index.js",
+  "main": "index.html",
   "dependencies": {
     "express": "^4.16.4",
     "nodemon": "^1.18.6"
